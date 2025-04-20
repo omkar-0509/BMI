@@ -1,0 +1,99 @@
+/* Global & Background */
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    color: #fff;
+    background: url('') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* ensures vertical stacking */
+    text-align: center;
+  }
+  
+  
+  
+  /* Calculator Box */
+  .calculator-container {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  /* Icon & Heading */
+  .icon {
+    width: 80px;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  /* Form Styles */
+  form {
+    display: grid;
+    gap: 1rem;
+  }
+  .input-group {
+    text-align: left;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+  input {
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  input:focus {
+    outline: 2px solid #00ccff;
+  }
+  button {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    background: #00ccff;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background: #0099cc;
+  }
+  
+  /* Result Section */
+  .result {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+  }
+  .result img {
+    display: block;
+    margin: 1rem auto 0;
+    width: 100px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .calculator-container {
+      padding: 1rem;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
